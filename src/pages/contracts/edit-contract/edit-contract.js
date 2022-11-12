@@ -11,11 +11,6 @@ const EditContract = () => {
   const navigate = useNavigate();
   const { state } = useLocation();
   const { getSuccessToast, getErrorToast } = useContext(AlertContext);
-  //   let contractId = "";
-  //   if (state !== null && state !== undefined) {
-  //     const { contractIdFromstate } = state;
-  //     contractId = contractIdFromstate;
-  //   }
   const { contractId } = state;
 
   const [startDate, setStartDate] = useState(new Date());
@@ -37,11 +32,6 @@ const EditContract = () => {
         contractStatus: contractStatus,
       }),
     };
-
-    console.log(
-      "URL to Patch: ",
-      process.env.REACT_APP_BASE_URL + "/contracts/status/" + contractId
-    );
 
     fetch(
       process.env.REACT_APP_BASE_URL + "/contracts/status/" + contractId,
@@ -66,7 +56,6 @@ const EditContract = () => {
   };
 
   const handleContractStatus = (e) => {
-    console.log(e.target.value);
     setContractStatus(e.target.value);
   };
 
@@ -94,7 +83,6 @@ const EditContract = () => {
       },
     };
 
-    // console.log(resObject);
     const requestOptions = {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
@@ -211,25 +199,7 @@ const EditContract = () => {
               dateFormat="dd/MM/yyyy"
             />
           </div>
-
-          {/* {contractData.contractType === "Fixed" ? (
-            <div>
-              <label> Approx. Budget: </label>
-              <input
-                required
-                placeholder="Budget"
-                name="budget"
-                value={contractData.budget}
-                onChange={handleContractChanges}
-              />
-            </div>
-          ) : (
-            <div></div>
-          )} */}
-
-          {/* <button onClick={buttonClick}> Submit </button> */}
           <button onClick={addMilestoneData}> Submit </button>
-          {/* <button onClick={checkEnum}> Submit </button> */}
         </form>
       </div>
     </div>

@@ -33,22 +33,7 @@ const AddContract = () => {
     if (!newContractData.contractType) {
       newContractData.contractType = "Reimbursement";
     }
-
     setContractData(newContractData);
-  };
-
-  const buttonClick = (e) => {
-    e.preventDefault();
-    const newContractData = { ...contractData };
-    newContractData.startDate = startDate.toLocaleDateString("en-US");
-    // console.log("Date picked: ", startDate.toLocaleDateString("en-US"));
-    console.log("Submit Contract data: \n", newContractData);
-  };
-
-  const checkEnum = (e) => {
-    e.preventDefault();
-    // console.log(typeof Statuses.IN_PROGRESS);
-    // console.log(JSON.stringify(getRequestObject()));
   };
 
   const getRequestObject = () => {
@@ -191,9 +176,7 @@ const AddContract = () => {
               dateFormat="dd/MM/yyyy"
             />
           </div>
-          {/* <button onClick={buttonClick}> Submit </button> */}
           <button onClick={addContractData}> Submit </button>
-          {/* <button onClick={checkEnum}> Submit </button> */}
         </form>
       </div>
     </div>

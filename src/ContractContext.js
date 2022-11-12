@@ -15,7 +15,7 @@ export function ContractProvider({ children }) {
       .then((response) => response.json())
       .then((data) => setContracts(data))
       .catch((error) => {
-        console.log("Error fetching data");
+        console.log("Error fetching data", error);
       });
   };
 
