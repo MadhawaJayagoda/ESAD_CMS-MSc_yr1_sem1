@@ -1,0 +1,25 @@
+.contractStatusCon {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contractStatusCon label {
+  text-align: right;
+  clear: both;
+  float: left;
+  margin-right: 15px;
+  padding: 20px;
+  width: 400px !important;
+}
+
+.contractStatusCon select {
+  font-size: large;
+}
+
+.contractStatusCon button {
+  float: left;
+  margin-left: 20px;
+  width: 500px;
+}

@@ -1,0 +1,20 @@
+.milestones-main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-left: 20%;
+  margin-top: 80px;
+}
+
+#inprogess-milestones {
+  overflow-y: scroll;
+  height: 200px;
+  display: block;
+}
+
+.button-con {
+  margin-left: 0px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}

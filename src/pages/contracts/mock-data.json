@@ -1,0 +1,62 @@
+[
+  {
+    "contractId": "g2pcc11fol9zvzk7i",
+    "contractStatus": "suspended",
+    "projectConstructor": {
+      "name": "John Smith",
+      "contactNumber": "0712232543",
+      "contracts": ["4jbsjdfb756ba", "4jbsjdf2h7jba", "4jbdsjdfb2jba"]
+    },
+    "customer": {
+      "name": "Sanju Sams",
+      "contactNumber": "0742311890"
+    },
+    "address": "No. 54, Bokundara, kotte",
+    "contractType": "Reimbursement",
+    "startDate": "2023-08-25",
+    "milestones": [
+      {
+        "status": "ready",
+        "milestoneName": "Living room",
+        "startDate": "2023-09-21",
+        "deliveryDate": "2023-12-25"
+      },
+      {
+        "status": "ready",
+        "milestoneName": "Kitchen",
+        "startDate": "2024-01-21",
+        "deliveryDate": "2024-05-18"
+      }
+    ]
+  },
+  {
+    "contractId": "g2pcc11fol9zw3a72",
+    "contractStatus": "inprogress",
+    "projectConstructor": {
+      "name": "John Smith",
+      "contactNumber": "0712232543",
+      "contracts": ["4jbsjdfb756ba", "4jbsjdf2h7jba", "4jbdsjdfb2jba"]
+    },
+    "customer": {
+      "name": "Sam Smith",
+      "contactNumber": "0722411890"
+    },
+    "address": "No. 88, Baker Rd, Borallesgamuwa",
+    "contractType": "Fixed",
+    "startDate": "2023-09-25",
+    "milestones": [
+      {
+        "status": "ready",
+        "milestoneName": "Living room",
+        "startDate": "2024-06-21",
+        "deliveryDate": "2024-12-25"
+      },
+      {
+        "status": "ready",
+        "milestoneName": "Kitchen",
+        "startDate": "2024-08-21",
+        "deliveryDate": "2024-12-18"
+      }
+    ]
+  }
+]
